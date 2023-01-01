@@ -23,21 +23,22 @@
         }
         var clicked = 0
         function foo() {
-            if (!clicked) {
+            clicked++
+            if (clicked % 2) {
                 img.src = "smiley.png"
-                clicked = !clicked
 
             }
             else {
                 img.src = "sad.png"
-                clicked=!clicked
 
             }
 
 
         }
 
-        canvas.addEventListener("click", foo)
+
+        canvas.addEventListener("mouseover", () => { img.src = "smiley.png" })
+        canvas.addEventListener("mouseout", () => { img.src = "sad.png" })
 
     </script>
 

@@ -1,0 +1,42 @@
+.svg-container {
+    margin-top: 150px;
+    display:flex;
+    justify-content: center;
+}
+
+.face {
+    fill: gold;
+}
+
+.mouth {
+    fill: none;
+    stroke: black;
+    stroke-width: 6px;
+    stroke-linecap: round;
+}
+
+.left-eyebrow {
+    transform: rotate(70deg);
+    transform-origin: 78px 60px;
+    translate: 5px;
+    transition: .5s;
+}
+
+
+.right-eyebrow {
+    transform: rotate(-70deg);
+    transform-origin: 188px 61px;
+    translate: 0px 5px;
+    transition: .5s;
+}
+
+
+.smiley:hover .left-eyebrow {
+    translate: 0px -5px;
+
+}
+
+.smiley:hover .right-eyebrow {
+    translate: 0px -5px;
+
+}

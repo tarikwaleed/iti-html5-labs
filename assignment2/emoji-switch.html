@@ -6,13 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>canvas demo</title>
+    <link rel="stylesheet" href="emoji-switch.styles.css">
 </head>
 
 <body>
-    <canvas id="canvas">
+    <div class="centered" width="500" height="500">
+        <canvas id="canvas">
 
 
-    </canvas>
+        </canvas>
+
+    </div>
     <script>
         var canvas = document.getElementById("canvas");
         var ctx = canvas.getContext("2d");
@@ -21,23 +25,9 @@
         img.onload = function () {
             ctx.drawImage(img, 50, 50, 100, 100);
         }
-        var clicked = 0
-        function foo() {
-            clicked++
-            if (clicked % 2) {
-                img.src = "smiley.png"
-
-            }
-            else {
-                img.src = "sad.png"
-
-            }
 
 
-        }
-
-
-        canvas.addEventListener("mouseover", () => { img.src = "smiley.png" })
+        canvas.addEventListener("mouseover", () => { img.src = "happy.png" })
         canvas.addEventListener("mouseout", () => { img.src = "sad.png" })
 
     </script>

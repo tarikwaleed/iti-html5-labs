@@ -1,0 +1,7 @@
+.centered {
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    height: 100%;
+    width: 100%;
+}

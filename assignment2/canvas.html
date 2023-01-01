@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas demo</title>
+</head>
+
+<body>
+    <canvas id="canvas">
+
+
+    </canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        var img = new Image();
+        img.src = "sad.png";
+        img.onload = function () {
+            ctx.drawImage(img, 50, 50, 100, 100);
+        }
+        var clicked = 0
+        function foo() {
+            if (!clicked) {
+                img.src = "smiley.png"
+                clicked = !clicked
+
+            }
+            else {
+                img.src = "sad.png"
+                clicked=!clicked
+
+            }
+
+
+        }
+
+        canvas.addEventListener("click", foo)
+
+    </script>
+
+</body>
+
+</html>

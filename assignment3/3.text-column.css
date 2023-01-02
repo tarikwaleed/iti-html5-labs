@@ -1,0 +1,8 @@
+.text-column {
+    font-size: 15px;
+    column-count: 5;
+    column-gap: 40px;
+    column-rule: 3px solid rgb(187, 187, 187);
+
+
+}

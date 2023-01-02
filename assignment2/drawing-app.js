@@ -24,7 +24,7 @@ toolbar.addEventListener('change', e => {
         ctx.strokeStyle = e.target.value;
     }
 
-    if(e.target.id === 'lineWidth') {
+    if(e.target.id === 'line-width') {
         lineWidth = e.target.value;
     }
     

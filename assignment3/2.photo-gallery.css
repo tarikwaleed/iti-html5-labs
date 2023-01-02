@@ -1,0 +1,27 @@
+.header h1{
+    text-align: center;
+    color: rgb(82, 38, 126);
+    font-size: 100px;
+    font-family: "Reem Kufi Fun";
+
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 40px;
+}
+.photo-item{
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+    transition: 3s;
+}
+.photo-item img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.photo-item:hover img{
+    transform: scale(1.5,1.5);
+
+}
